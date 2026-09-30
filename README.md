@@ -549,8 +549,8 @@ src/agents/ + src/memory/                    Optional advisory layer
 
 ---
 
-<details open>
-<summary><strong>🔎 LIMITATIONS & NEXT VALIDATION STEPS</strong></summary>
+
+**&#xA0;🔎 LIMITATIONS & NEXT VALIDATION STEPS**
 
 > **This is a working decision-support prototype. The following items define
 > the boundary between the current demonstration and field-ready deployment.**
@@ -569,7 +569,7 @@ src/agents/ + src/memory/                    Optional advisory layer
 
 > **Design principle:** missing evidence remains visible, simulation remains labelled as simulation, and field decisions require professional validation.
 
-</details>
+
 
 ---
 
