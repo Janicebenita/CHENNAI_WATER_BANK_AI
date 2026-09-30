@@ -74,7 +74,5 @@ def render_priority_operations(feature):
                 st.caption(constraint)
             st.caption(f"Mass-balance residual: {allocation.mass_balance_error_l:.8f} L")
         st.info("Awaiting human review. This recommendation sends no infrastructure commands.")
-    st.page_link(
-        "pages/01_command_center.py",
-        label="Open Command Centre — simulate or reset the shared storm",
-    )
+    if st.button("Open Command Centre — simulate or reset the shared storm"):
+        st.switch_page("pages/01_command_center.py")
