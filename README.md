@@ -663,7 +663,7 @@ The preprocessing script reuses cached subsets and performs no credentialed acce
 </tr>
 <tr>
   <td><strong>Team Member</strong></td>
-  <td><strong>Tytus Glaston</strong></td>
+  <td><strong>Tytus Glastin</strong></td>
 </tr>
 </table>
 
