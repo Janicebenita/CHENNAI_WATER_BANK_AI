@@ -69,34 +69,38 @@ Team LOGOS VICTORIS
 > **🌍 WHERE should conservation attention be investigated?**  
 > **⚙️ WHAT could a configured Water Bank node do during a simulated event?**
 
-<table>
+<table width="100%">
 <tr>
-<td width="50%" valign="top">
+<td width="500" valign="top" align="center">
 
-### 🌍 GEOSPATIAL PLANNING
-**WHERE?**
+<h3 align="center">🌍 GEOSPATIAL&nbsp;PLANNING</h3>
+<p align="center"><strong>WHERE?</strong></p>
 
-Open geospatial evidence  
-↓  
-Transparent priority index  
-↓  
-Provisional priority zones  
-↓  
+<p align="center">
+Open geospatial evidence<br />
+↓<br />
+Transparent priority index<br />
+↓<br />
+Provisional priority zones<br />
+↓<br />
 Explainable recommendation
+</p>
 
 </td>
-<td width="50%" valign="top">
+<td width="500" valign="top" align="center">
 
-### 💧 WATER BANK ENGINEERING
-**WHAT COULD BE EVALUATED?**
+<h3 align="center">💧 WATER&nbsp;BANK&nbsp;ENGINEERING</h3>
+<p align="center"><strong>WHAT COULD BE EVALUATED?</strong></p>
 
-Synthetic event inputs  
-↓  
-Deterministic safety gates  
-↓  
-STORE · RECHARGE · DOWNSTREAM  
-↓  
+<p align="center">
+Synthetic event inputs<br />
+↓<br />
+Deterministic safety gates<br />
+↓<br />
+STORE · RECHARGE · DOWNSTREAM<br />
+↓<br />
 Volume-allocation impact
+</p>
 
 </td>
 </tr>
