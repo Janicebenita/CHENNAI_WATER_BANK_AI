@@ -549,8 +549,8 @@ src/agents/ + src/memory/                    Optional advisory layer
 
 ---
 
-<details>
-# 🔎 LIMITATIONS & NEXT VALIDATION STEPS
+<details open>
+<summary><strong>🔎 LIMITATIONS & NEXT VALIDATION STEPS</strong></summary>
 
 > **This is a working decision-support prototype. The following items define
 > the boundary between the current demonstration and field-ready deployment.**
@@ -559,7 +559,7 @@ src/agents/ + src/memory/                    Optional advisory layer
 |---|---|
 | 12 demonstration analysis zones, not official micro-watersheds | Perform hydrologic catchment delineation and boundary validation |
 | Soil evidence is not yet bundled | Integrate a sourced hydrologic soil-group dataset |
-| Drainage density is not yet bundled | Derive/validate drainage density from a conditioned DEM and drainage network |
+| Drainage density is not yet bundled | Derive and validate drainage density from a conditioned DEM and drainage network |
 | Current six-input rankings are provisional | Recalculate with all eight sourced indicators |
 | Demonstration weights and thresholds are uncalibrated | Conduct sensitivity analysis and expert calibration |
 | NDVI uses a single acquisition | Extend to multi-date or seasonal vegetation evidence |
@@ -567,11 +567,13 @@ src/agents/ + src/memory/                    Optional advisory layer
 | ESP32 remains a proof-of-concept | Validate sensing and edge integration before operational use |
 | No calibrated hydraulic flood model | Do not interpret retained runoff as predicted flood reduction |
 
-> **The design principle is simple:** missing evidence remains visible, simulation remains labelled as simulation, and field decisions require professional validation.
+> **Design principle:** missing evidence remains visible, simulation remains labelled as simulation, and field decisions require professional validation.
+
+</details>
+
 ---
 
 # ✅ ENGINEERING VALIDATION
-
 | Check | Status |
 |---|---:|
 | 🧪 Automated Tests | **103 passed** |
