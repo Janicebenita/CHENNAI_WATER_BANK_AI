@@ -49,7 +49,7 @@ Team LOGOS VICTORIS
 </p>
 
 <p align="center">
-  <a href="https://chennai-water-bank-geoimpathon-1032997828322.asia-south1.run.app/water_conservation_priority_map"><strong>🚀 LAUNCH GEOIMPATHON DEMO</strong></a>
+  <a href="https://chennai-water-bank-geoimpathon-1032997828322.asia-south1.run.app"><strong>🚀 LAUNCH GEOIMPATHON DEMO</strong></a>
   &nbsp;•&nbsp;
   <a href="#-see-it-in-action"><strong>🎬 SEE IT IN ACTION</strong></a>
   &nbsp;•&nbsp;
