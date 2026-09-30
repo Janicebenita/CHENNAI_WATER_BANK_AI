@@ -550,25 +550,24 @@ src/agents/ + src/memory/                    Optional advisory layer
 ---
 
 <details>
-<summary><strong>🔎 OPEN LIMITATIONS & NEXT VALIDATION STEPS</strong></summary>
+# 🔎 LIMITATIONS & NEXT VALIDATION STEPS
 
-- The 12 bundled polygons are demonstration rectangles, not official micro-watersheds.
-- DEM conditioning, catchment delineation and boundary validation remain outstanding.
-- Soil and drainage density are missing from the bundled sample.
-- Six-input rankings are provisional; sourced missing evidence is required for the complete supported model.
-- Acquisition periods are mixed.
-- NDVI is based on a single date.
-- Regional rainfall is shared across zones.
-- Terrain resolution and sampled zonal aggregation are limited.
-- JRC GSW v1.4 carries a legacy provider caveat; corrected/validated data should be used before field decisions.
-- Weights, normalization anchors and class thresholds are demonstration assumptions and remain uncalibrated.
-- Priority is not intervention effectiveness or recharge permission.
-- There is no live physical sensing or autonomous infrastructure control.
-- There is no calibrated hydraulic flood-depth or flood-damage model.
-- External context tiles require internet; scoring, tables, recommendations and polygon geometry do not.
+> **This is a working decision-support prototype. The following items define
+> the boundary between the current demonstration and field-ready deployment.**
 
-</details>
+| CURRENT PROTOTYPE BOUNDARY | NEXT VALIDATION STEP |
+|---|---|
+| 12 demonstration analysis zones, not official micro-watersheds | Perform hydrologic catchment delineation and boundary validation |
+| Soil evidence is not yet bundled | Integrate a sourced hydrologic soil-group dataset |
+| Drainage density is not yet bundled | Derive/validate drainage density from a conditioned DEM and drainage network |
+| Current six-input rankings are provisional | Recalculate with all eight sourced indicators |
+| Demonstration weights and thresholds are uncalibrated | Conduct sensitivity analysis and expert calibration |
+| NDVI uses a single acquisition | Extend to multi-date or seasonal vegetation evidence |
+| Rainfall uses a regional value | Introduce validated spatial rainfall variation |
+| ESP32 remains a proof-of-concept | Validate sensing and edge integration before operational use |
+| No calibrated hydraulic flood model | Do not interpret retained runoff as predicted flood reduction |
 
+> **The design principle is simple:** missing evidence remains visible, simulation remains labelled as simulation, and field decisions require professional validation.
 ---
 
 # ✅ ENGINEERING VALIDATION
