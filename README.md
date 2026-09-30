@@ -15,8 +15,9 @@ Team LOGOS VICTORIS
 <h1 align="center">🌊 CHENNAI WATER BANK AI 🌊</h1>
 
 <h3 align="center">
-  🌍 Geospatial Water Conservation Priority Mapping<br />
-  💧 Distributed Rainwater Intelligence
+  Geospatial Water Conservation Priority Mapping<br />
+  ×<br />
+  Distributed Rainwater Intelligence
 </h3>
 
 <p align="center">
@@ -49,7 +50,7 @@ Team LOGOS VICTORIS
 </p>
 
 <p align="center">
-  <a href="https://chennai-water-bank-geoimpathon-1032997828322.asia-south1.run.app"><strong>🚀 LAUNCH GEOIMPATHON DEMO</strong></a>
+  <a href="https://chennai-water-bank-geoimpathon-1032997828322.asia-south1.run.app/water_conservation_priority_map"><strong>🚀 LAUNCH GEOIMPATHON DEMO</strong></a>
   &nbsp;•&nbsp;
   <a href="#-see-it-in-action"><strong>🎬 SEE IT IN ACTION</strong></a>
   &nbsp;•&nbsp;
