@@ -134,37 +134,30 @@ Volume-allocation impact
 
 > **Presentation video:** [Watch Chennai Water Bank AI on YouTube](https://youtu.be/PMST19C4lI0)
 
-### 🗺️ Priority Map — recommended showcase asset
+### 🗺️ Priority Map
 
-```html
 <p align="center">
-  <img src="Docs/priority-map-demo.gif"
+  <img src="Docs/priority-map-demo.jpg"
        width="95%"
        alt="Chennai Water Bank AI interactive Water Conservation Priority Map" />
 </p>
-```
 
-### 🔍 Selected Zone — recommended showcase asset
+### 🔍 Selected Zone
 
-```html
 <p align="center">
-  <img src="Docs/priority-zone-selected.png"
+  <img src="Docs/priority-zone-selected.jpg"
        width="90%"
        alt="Selected demonstration analysis zone showing priority score, evidence and recommendation" />
 </p>
-```
 
-### 📊 Impact Analytics — recommended showcase asset
+### 📊 Impact Analytics
 
-```html
 <p align="center">
-  <img src="Docs/impact-analytics.png"
+  <img src="Docs/impact-analytics.jpg"
        width="90%"
        alt="Water Bank simulated event Impact Analytics" />
 </p>
-```
 
-> Remove an image block if the corresponding authentic file has not been added to `Docs/` before submission.
 
 ---
 
