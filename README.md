@@ -360,7 +360,7 @@ flowchart LR
     S --> A["🏦 STORE"]
     S --> B["🌱 MODELLED RECHARGE"]
     S --> C["🌊 DOWNSTREAM FLOW"]
-    A --> D["📊 Mass-Balanced Accounting"]
+    A --> D["📊 MOSS-Balanced Accounting"]
     B --> D
     C --> D
 ```
