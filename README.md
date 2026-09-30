@@ -107,7 +107,7 @@ Volume-allocation impact
 </table>
 
 > [!IMPORTANT]
-> **Current evidence boundary:** 12 **demonstration analysis zones** · 8 challenge inputs supported by the model · 6 bundled source-derived indicators. **Soil and drainage density are not bundled and are not fabricated.** The current rankings are therefore **provisional**. The demonstration boundaries are **not official micro-watersheds**.
+> **Current evidence boundary:** 12 **demonstration analysis zones** · 8 challenge inputs supported by the model · 6 bundled source-derived indicators. **Soil and drainage density are not bundled and are not fabricated.**(The Priority Map currently lacks spatial soil-group and drainage-density datasets. The separate ESP32 prototype includes a local soil-moisture sensor for recharge control.) The current rankings are therefore **provisional**. The demonstration boundaries are **not official micro-watersheds**.
 
 ---
 
