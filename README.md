@@ -128,7 +128,7 @@ Volume-allocation impact
   </a>
 </p>
 
-> **For the submission repository:** add authentic application media here when captured from the final deployed build. Do not replace this slot with a fabricated interface.
+> **Presentation video:** [Watch Chennai Water Bank AI on YouTube](https://youtu.be/PMST19C4lI0)
 
 ### 🗺️ Priority Map — recommended showcase asset
 
