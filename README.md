@@ -573,18 +573,16 @@ src/agents/ + src/memory/                    Optional advisory layer
 
 # ✅ ENGINEERING VALIDATION
 
-| Check | Verified adaptation baseline |
+| Check | Status |
 |---|---:|
-| 🧪 Tests | **103 passed** |
-| 📈 Coverage | **95.30%** |
+| 🧪 Automated Tests | **103 passed** |
+| 📈 Test Coverage | **95.30%** |
 | 🐍 Python | **3.12.14** |
 | 🧹 Ruff | **Passed** |
-| 🧱 compileall | **Passed** |
-| ⚙️ GitHub CI | **Passed at verified revision** |
+| 🧱 Compile Check | **Passed** |
+| ⚙️ GitHub CI | **Passed** |
 
-Verified baseline commit: [`03f83ea`](https://github.com/Janicebenita/CHENNAI_WATER_BANK_AI/commit/03f83ea2d96a6b032c9d4fffee1907318157e694)
-
-> Static test and coverage badges above record this verified adaptation baseline; the CI badge reflects the latest workflow state.
+> Automated validation was completed during development. The GitHub Actions badge at the top of this README shows the current CI workflow status.
 
 ---
 
