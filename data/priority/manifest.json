@@ -1,0 +1,113 @@
+{
+  "generated_utc": "2026-09-30T04:37:50.356888+00:00",
+  "bbox": [
+    80.1,
+    12.88,
+    80.28,
+    13.16
+  ],
+  "crs": "EPSG:4326",
+  "grid_resolution_degrees": 0.0005,
+  "zone_type": "Demonstration Analysis Zones; rectangular grid, NOT delineated watersheds",
+  "sentinel_date": "2024-02-29",
+  "sentinel_boa_offset_already_applied": true,
+  "rainfall_period": "2024-01-01/2024-12-31",
+  "worldcover_year": 2021,
+  "surface_water_period": "1984-2021 JRC GSW v1.4; superseded product with known occurrence inconsistencies; screening only",
+  "terrain_resolution_m_approx": 37.24,
+  "files": {
+    "dem_12_2959_1896.png": {
+      "sha256": "9e03cd4698ceb9023ce887886ed4d09806e6005bac7c9a9a692eb9a2246d12e8",
+      "source_url": "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/12/2959/1896.png"
+    },
+    "dem_12_2959_1897.png": {
+      "sha256": "c8e1471081601c65a977ae2552ffc8341703596c483a0b71d10ff5d156cd413c",
+      "source_url": "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/12/2959/1897.png"
+    },
+    "dem_12_2959_1898.png": {
+      "sha256": "85e903e3017baa22e47d72e5c39d464f44c2a191bd48bcf9b5e216163bb2781b",
+      "source_url": "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/12/2959/1898.png"
+    },
+    "dem_12_2959_1899.png": {
+      "sha256": "04bf9b661554ffd195abc60684e93862e4c1a728b3a98c19e4df9dc67a3101d5",
+      "source_url": "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/12/2959/1899.png"
+    },
+    "dem_12_2959_1900.png": {
+      "sha256": "c893f80b834c51e7fa896169287a7e4be1b0eac0e1dc5301f8f0482a9c14fbab",
+      "source_url": "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/12/2959/1900.png"
+    },
+    "dem_12_2960_1896.png": {
+      "sha256": "606d0c01efd00df7866e9f24e817eadc5a81ecea1add10e4c9f3e3829ba12c0b",
+      "source_url": "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/12/2960/1896.png"
+    },
+    "dem_12_2960_1897.png": {
+      "sha256": "44a7ea7e3fa4093099ee18419cb12173d4aafd96a23f9ee52ad91392c868c39c",
+      "source_url": "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/12/2960/1897.png"
+    },
+    "dem_12_2960_1898.png": {
+      "sha256": "b9246adbe34f0ada8ab3ff7c2e340070242e882b5847f4d9268de8f2dd9f1b38",
+      "source_url": "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/12/2960/1898.png"
+    },
+    "dem_12_2960_1899.png": {
+      "sha256": "b7a2baf87aa57ba49e31e9de490c5e21ba4dfbdad39664855284d49e96170c67",
+      "source_url": "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/12/2960/1899.png"
+    },
+    "dem_12_2960_1900.png": {
+      "sha256": "072967dc1b308e252f479b913c4641d3eb81460b24779e8567bb67ee87aa31b2",
+      "source_url": "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/12/2960/1900.png"
+    },
+    "dem_12_2961_1896.png": {
+      "sha256": "30cb8eda8d47dbd6472b1b53e65371493bb7998291895cb6cf214987a0dcf19e",
+      "source_url": "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/12/2961/1896.png"
+    },
+    "dem_12_2961_1897.png": {
+      "sha256": "58988e033e4435e44ae937211d368121b56a5a0b7774c059de68b57a62452dc3",
+      "source_url": "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/12/2961/1897.png"
+    },
+    "dem_12_2961_1898.png": {
+      "sha256": "252868e7d1114d88d3ba2eac04a0e4f50d3d807cc1646f8f8e7527cf5be29601",
+      "source_url": "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/12/2961/1898.png"
+    },
+    "dem_12_2961_1899.png": {
+      "sha256": "6e6a056bb19f5e91985f2dea66dad8ab21bf8d89555a12e1d0f3bcabd509ef0a",
+      "source_url": "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/12/2961/1899.png"
+    },
+    "dem_12_2961_1900.png": {
+      "sha256": "d9e0503a0e5d2e9c2d78451008eb191fc964c2f166da56608524d15e66967749",
+      "source_url": "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/12/2961/1900.png"
+    },
+    "nir.npz": {
+      "sha256": "83c235d357655f4ee2415e2622f1789351a69cbf2cb3016ba1de5b030f8ba47e",
+      "source_url": "https://sentinel-cogs.s3.us-west-2.amazonaws.com/sentinel-s2-l2a-cogs/44/P/MV/2024/2/S2B_44PMV_20240229_0_L2A/B08.tif"
+    },
+    "power_2024.json": {
+      "sha256": "da24c79c6e158d6da74b3217951510af07038b5d6372f9e3e5eeb42bb67430aa",
+      "source_url": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=PRECTOTCORR&community=AG&longitude=80.2&latitude=13.0&start=20240101&end=20241231&format=JSON"
+    },
+    "red.npz": {
+      "sha256": "0bc23ef641487fcc25883f8d34039d2fe4c475f55bc85755018cdf2aea1f17ce",
+      "source_url": "https://sentinel-cogs.s3.us-west-2.amazonaws.com/sentinel-s2-l2a-cogs/44/P/MV/2024/2/S2B_44PMV_20240229_0_L2A/B04.tif"
+    },
+    "scl.npz": {
+      "sha256": "236eab285466e31164685196a7466ecc2bc3a3cda6e3219ef9eddba4d03f3cb1",
+      "source_url": "https://sentinel-cogs.s3.us-west-2.amazonaws.com/sentinel-s2-l2a-cogs/44/P/MV/2024/2/S2B_44PMV_20240229_0_L2A/SCL.tif"
+    },
+    "sentinel_item.json": {
+      "sha256": "4ebc29d7dfd7e5110631c21fdde4af8b36cb6adacda8832f5de1072112420315",
+      "source_url": "https://earth-search.aws.element84.com/v1/collections/sentinel-2-l2a/items/S2B_44PMV_20240229_0_L2A"
+    },
+    "water_occurrence.npz": {
+      "sha256": "a8303266a54b6605883822e1c69927285114c4e554ab73d00914024b3f54fa08",
+      "source_url": "https://storage.googleapis.com/global-surface-water/downloads2021/occurrence/occurrence_80E_20Nv1_4_2021.tif"
+    },
+    "worldcover.npz": {
+      "sha256": "f28eea72a02758efbc45472c98536fa12ad3f06e05938cd22f244b0c373cea33",
+      "source_url": "https://esa-worldcover.s3.eu-central-1.amazonaws.com/v200/2021/map/ESA_WorldCover_10m_2021_v200_N12E078_Map.tif"
+    }
+  },
+  "missing": [
+    "drainage_density_km_km2",
+    "soil"
+  ],
+  "processing": "Nearest-neighbour common WGS84 sample grid (~54m), not exhaustive native-resolution zonal statistics. Mean DEM and source-gradient slope; cloud/shadow masked land NDVI from SCL 4/5 with >=20% valid grid coverage; modal WorldCover class. Annual rainfall sums 366 regional reanalysis days, shared across all zones. No spatial rainfall downscaling. Mean JRC long-term water occurrence over valid grid samples (0 included; 255 excluded), not water-area percentage. No water occurrence derived from a single image."
+}

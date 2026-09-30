@@ -1,0 +1,569 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "id": "C11",
+      "properties": {
+        "zone_id": "C11",
+        "zone": "Chennai grid 1-1",
+        "elevation_m": 21.614,
+        "slope_deg": 2.019,
+        "drainage_density_km_km2": null,
+        "rainfall_mm": 1623.87,
+        "ndvi": 0.3217,
+        "land_use": "Built-up",
+        "soil": null,
+        "surface_water_pct": 5.755,
+        "ndvi_valid_fraction": 0.7058,
+        "rainfall_period": "2024 annual; shared regional POWER cell",
+        "latitude": 13.125,
+        "longitude": 80.13
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              80.1,
+              13.09
+            ],
+            [
+              80.16,
+              13.09
+            ],
+            [
+              80.16,
+              13.16
+            ],
+            [
+              80.1,
+              13.16
+            ],
+            [
+              80.1,
+              13.09
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "C12",
+      "properties": {
+        "zone_id": "C12",
+        "zone": "Chennai grid 1-2",
+        "elevation_m": 13.078,
+        "slope_deg": 1.764,
+        "drainage_density_km_km2": null,
+        "rainfall_mm": 1623.87,
+        "ndvi": 0.2593,
+        "land_use": "Built-up",
+        "soil": null,
+        "surface_water_pct": 11.913,
+        "ndvi_valid_fraction": 0.8362,
+        "rainfall_period": "2024 annual; shared regional POWER cell",
+        "latitude": 13.125,
+        "longitude": 80.19
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              80.16,
+              13.09
+            ],
+            [
+              80.22,
+              13.09
+            ],
+            [
+              80.22,
+              13.16
+            ],
+            [
+              80.16,
+              13.16
+            ],
+            [
+              80.16,
+              13.09
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "C13",
+      "properties": {
+        "zone_id": "C13",
+        "zone": "Chennai grid 1-3",
+        "elevation_m": 8.077,
+        "slope_deg": 1.917,
+        "drainage_density_km_km2": null,
+        "rainfall_mm": 1623.87,
+        "ndvi": 0.2891,
+        "land_use": "Built-up",
+        "soil": null,
+        "surface_water_pct": 0.306,
+        "ndvi_valid_fraction": 0.9874,
+        "rainfall_period": "2024 annual; shared regional POWER cell",
+        "latitude": 13.125,
+        "longitude": 80.25
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              80.22,
+              13.09
+            ],
+            [
+              80.28,
+              13.09
+            ],
+            [
+              80.28,
+              13.16
+            ],
+            [
+              80.22,
+              13.16
+            ],
+            [
+              80.22,
+              13.09
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "C21",
+      "properties": {
+        "zone_id": "C21",
+        "zone": "Chennai grid 2-1",
+        "elevation_m": 17.619,
+        "slope_deg": 2.049,
+        "drainage_density_km_km2": null,
+        "rainfall_mm": 1623.87,
+        "ndvi": 0.3115,
+        "land_use": "Built-up",
+        "soil": null,
+        "surface_water_pct": 0.8,
+        "ndvi_valid_fraction": 0.9667,
+        "rainfall_period": "2024 annual; shared regional POWER cell",
+        "latitude": 13.055,
+        "longitude": 80.13
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              80.1,
+              13.02
+            ],
+            [
+              80.16,
+              13.02
+            ],
+            [
+              80.16,
+              13.09
+            ],
+            [
+              80.1,
+              13.09
+            ],
+            [
+              80.1,
+              13.02
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "C22",
+      "properties": {
+        "zone_id": "C22",
+        "zone": "Chennai grid 2-2",
+        "elevation_m": 13.507,
+        "slope_deg": 1.802,
+        "drainage_density_km_km2": null,
+        "rainfall_mm": 1623.87,
+        "ndvi": 0.2486,
+        "land_use": "Built-up",
+        "soil": null,
+        "surface_water_pct": 0.035,
+        "ndvi_valid_fraction": 0.9965,
+        "rainfall_period": "2024 annual; shared regional POWER cell",
+        "latitude": 13.055,
+        "longitude": 80.19
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              80.16,
+              13.02
+            ],
+            [
+              80.22,
+              13.02
+            ],
+            [
+              80.22,
+              13.09
+            ],
+            [
+              80.16,
+              13.09
+            ],
+            [
+              80.16,
+              13.02
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "C23",
+      "properties": {
+        "zone_id": "C23",
+        "zone": "Chennai grid 2-3",
+        "elevation_m": 11.02,
+        "slope_deg": 2.078,
+        "drainage_density_km_km2": null,
+        "rainfall_mm": 1623.87,
+        "ndvi": 0.2823,
+        "land_use": "Built-up",
+        "soil": null,
+        "surface_water_pct": 0.393,
+        "ndvi_valid_fraction": 0.9912,
+        "rainfall_period": "2024 annual; shared regional POWER cell",
+        "latitude": 13.055,
+        "longitude": 80.25
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              80.22,
+              13.02
+            ],
+            [
+              80.28,
+              13.02
+            ],
+            [
+              80.28,
+              13.09
+            ],
+            [
+              80.22,
+              13.09
+            ],
+            [
+              80.22,
+              13.02
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "C31",
+      "properties": {
+        "zone_id": "C31",
+        "zone": "Chennai grid 3-1",
+        "elevation_m": 17.034,
+        "slope_deg": 2.089,
+        "drainage_density_km_km2": null,
+        "rainfall_mm": 1623.87,
+        "ndvi": 0.3446,
+        "land_use": "Built-up",
+        "soil": null,
+        "surface_water_pct": 0.485,
+        "ndvi_valid_fraction": 0.9789,
+        "rainfall_period": "2024 annual; shared regional POWER cell",
+        "latitude": 12.985,
+        "longitude": 80.13
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              80.1,
+              12.95
+            ],
+            [
+              80.16,
+              12.95
+            ],
+            [
+              80.16,
+              13.02
+            ],
+            [
+              80.1,
+              13.02
+            ],
+            [
+              80.1,
+              12.95
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "C32",
+      "properties": {
+        "zone_id": "C32",
+        "zone": "Chennai grid 3-2",
+        "elevation_m": 12.339,
+        "slope_deg": 2.288,
+        "drainage_density_km_km2": null,
+        "rainfall_mm": 1623.87,
+        "ndvi": 0.2957,
+        "land_use": "Built-up",
+        "soil": null,
+        "surface_water_pct": 0.536,
+        "ndvi_valid_fraction": 0.9827,
+        "rainfall_period": "2024 annual; shared regional POWER cell",
+        "latitude": 12.985,
+        "longitude": 80.19
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              80.16,
+              12.95
+            ],
+            [
+              80.22,
+              12.95
+            ],
+            [
+              80.22,
+              13.02
+            ],
+            [
+              80.16,
+              13.02
+            ],
+            [
+              80.16,
+              12.95
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "C33",
+      "properties": {
+        "zone_id": "C33",
+        "zone": "Chennai grid 3-3",
+        "elevation_m": 6.293,
+        "slope_deg": 1.552,
+        "drainage_density_km_km2": null,
+        "rainfall_mm": 1623.87,
+        "ndvi": 0.3594,
+        "land_use": "Built-up",
+        "soil": null,
+        "surface_water_pct": 18.441,
+        "ndvi_valid_fraction": 0.7907,
+        "rainfall_period": "2024 annual; shared regional POWER cell",
+        "latitude": 12.985,
+        "longitude": 80.25
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              80.22,
+              12.95
+            ],
+            [
+              80.28,
+              12.95
+            ],
+            [
+              80.28,
+              13.02
+            ],
+            [
+              80.22,
+              13.02
+            ],
+            [
+              80.22,
+              12.95
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "C41",
+      "properties": {
+        "zone_id": "C41",
+        "zone": "Chennai grid 4-1",
+        "elevation_m": 25.131,
+        "slope_deg": 2.365,
+        "drainage_density_km_km2": null,
+        "rainfall_mm": 1623.87,
+        "ndvi": 0.3709,
+        "land_use": "Built-up",
+        "soil": null,
+        "surface_water_pct": 1.515,
+        "ndvi_valid_fraction": 0.9552,
+        "rainfall_period": "2024 annual; shared regional POWER cell",
+        "latitude": 12.915,
+        "longitude": 80.13
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              80.1,
+              12.879999999999999
+            ],
+            [
+              80.16,
+              12.879999999999999
+            ],
+            [
+              80.16,
+              12.95
+            ],
+            [
+              80.1,
+              12.95
+            ],
+            [
+              80.1,
+              12.879999999999999
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "C42",
+      "properties": {
+        "zone_id": "C42",
+        "zone": "Chennai grid 4-2",
+        "elevation_m": 9.153,
+        "slope_deg": 1.996,
+        "drainage_density_km_km2": null,
+        "rainfall_mm": 1623.87,
+        "ndvi": 0.3624,
+        "land_use": "Built-up",
+        "soil": null,
+        "surface_water_pct": 2.84,
+        "ndvi_valid_fraction": 0.9257,
+        "rainfall_period": "2024 annual; shared regional POWER cell",
+        "latitude": 12.915,
+        "longitude": 80.19
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              80.16,
+              12.879999999999999
+            ],
+            [
+              80.22,
+              12.879999999999999
+            ],
+            [
+              80.22,
+              12.95
+            ],
+            [
+              80.16,
+              12.95
+            ],
+            [
+              80.16,
+              12.879999999999999
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "C43",
+      "properties": {
+        "zone_id": "C43",
+        "zone": "Chennai grid 4-3",
+        "elevation_m": 1.823,
+        "slope_deg": 1.142,
+        "drainage_density_km_km2": null,
+        "rainfall_mm": 1623.87,
+        "ndvi": 0.3488,
+        "land_use": "Permanent water",
+        "soil": null,
+        "surface_water_pct": 39.313,
+        "ndvi_valid_fraction": 0.5638,
+        "rainfall_period": "2024 annual; shared regional POWER cell",
+        "latitude": 12.915,
+        "longitude": 80.25
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              80.22,
+              12.879999999999999
+            ],
+            [
+              80.28,
+              12.879999999999999
+            ],
+            [
+              80.28,
+              12.95
+            ],
+            [
+              80.22,
+              12.95
+            ],
+            [
+              80.22,
+              12.879999999999999
+            ]
+          ]
+        ]
+      }
+    }
+  ]
+}
