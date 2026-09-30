@@ -107,7 +107,9 @@ Volume-allocation impact
 </table>
 
 > [!IMPORTANT]
-> **Current evidence boundary:** 12 **demonstration analysis zones** · 8 challenge inputs supported by the model · 6 bundled source-derived indicators. **Soil and drainage density are not bundled and are not fabricated.**(The Priority Map currently lacks spatial soil-group and drainage-density datasets. The separate ESP32 prototype includes a local soil-moisture sensor for recharge control.) The current rankings are therefore **provisional**. The demonstration boundaries are **not official micro-watersheds**.
+> **Current prototype scope:** Chennai Water Bank AI supports all **8 geospatial indicators specified in Problem Statement 2.3** and demonstrates explainable water-conservation priority mapping across **12 analysis zones**. The current bundled workflow uses **6 source-derived indicators**, while **soil-group and drainage-density layers are supported through provenance-aware data import and remain planned additions to the bundled spatial evidence**. Accordingly, the present priority classifications are presented as **provisional decision-support results** pending complete evidence and field validation. The 12 zones are **demonstration analysis units**, not official micro-watershed delineations.
+>
+> **Physical prototype:** The separate ESP32 proof-of-concept includes a local soil-moisture sensor for exploring future sensing and recharge-control workflows; this sensor is separate from the geospatial soil-group dataset required by the Priority Map.
 
 ---
 
