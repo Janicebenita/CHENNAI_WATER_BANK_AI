@@ -29,6 +29,7 @@
 </p>
 
 <p align="center">
+  <a href="https://chennai-water-bank-geoimpathon-1032997828322.asia-south1.run.app/water_conservation_priority_map"><strong>Launch GeoImpathon Demo</strong></a> ·
   <a href="#priority-map"><strong>Explore the Priority Map</strong></a> ·
   <a href="#data-sources"><strong>Inspect the Evidence</strong></a> ·
   <a href="#run-locally"><strong>Run Locally</strong></a> ·
@@ -47,7 +48,7 @@
 > [!IMPORTANT]
 > **Current evidence:** 12 demonstration analysis zones · 6 sourced indicators · 8 supported model inputs. Soil and drainage density are not bundled; boundaries are not official micro-watersheds. Priorities remain **provisional**, with complete-data mode available.
 >
-> **Deployment:** the linked staging service predates this adaptation. The new priority page is available in this repository and local runs; its Cloud Run deployment has not yet been verified.
+> **Deployment:** the [GeoImpathon priority map](https://chennai-water-bank-geoimpathon-1032997828322.asia-south1.run.app/water_conservation_priority_map) runs on its own public Cloud Run source service, `chennai-water-bank-geoimpathon`. The original application, staging and prototype services retain their existing URLs and revisions.
 
 <details>
 <summary><strong>Navigate the project</strong></summary>
