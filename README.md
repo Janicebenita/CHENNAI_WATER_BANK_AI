@@ -15,9 +15,8 @@ Team LOGOS VICTORIS
 <h1 align="center">🌊 CHENNAI WATER BANK AI 🌊</h1>
 
 <h3 align="center">
-  Geospatial Water Conservation Priority Mapping<br />
-  ×<br />
-  Distributed Rainwater Intelligence
+  🌍 Geospatial Water Conservation Priority Mapping<br />
+  💧 Distributed Rainwater Intelligence
 </h3>
 
 <p align="center">
