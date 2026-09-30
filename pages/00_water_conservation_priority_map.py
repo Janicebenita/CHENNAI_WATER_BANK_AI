@@ -18,6 +18,7 @@ from src.geospatial.data import DATA_DIR, apply_csv, csv_template, load_sample
 from src.geospatial.priority import recommendation, score_zones, validate_weights
 from src.simulation.scenarios import SCENARIOS
 from src.ui.scenario_controls import run_scenario
+from src.ui.priority_operations import render_priority_operations
 from src.ui.components import decision_card, safety_notice
 from src.ui.theme import configure_page, render_sidebar_context
 
@@ -324,7 +325,9 @@ st.download_button(
     "application/geo+json",
 )
 
-st.subheader("From WHERE to WHAT · Water Bank scenario")
+render_priority_operations(features[index])
+
+st.subheader("Separate hypothetical Water Bank scenario")
 st.caption(
     "Zone selection supplies planning context only. Annual rainfall, priority and NDVI are NOT converted into event rainfall, tank capacity or recharge rates. The following scenario is explicitly synthetic and does not alter Network Simulation or its Impact Analytics."
 )

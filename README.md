@@ -347,6 +347,9 @@ Correlated indicators, mixed acquisition dates and scoring direction require sen
 
 # 💧 FROM PRIORITY MAPPING TO WATER BANK ENGINEERING
 
+The Priority Map now reads the **same active simulated storm snapshot as the Command Centre**. Configured node coordinates associate six fictional demonstration nodes with four analysis zones (C22, C23, C33 and C41). Each associated node automatically shows its existing deterministic decision, pulse timestamp, operating inputs and allocation for **human review**. Zones without a node show no connected operational recommendation. Reopen or refresh the map after running/resetting the Command Centre in the same session. This does not connect live sensors, transmit infrastructure commands, or change priority scores or network allocations. The separate hypothetical scenario selector remains available.
+
+
 <h2 align="center">🏦 STORE &nbsp; → &nbsp; 🌱 RECHARGE &nbsp; → &nbsp; 🌊 DOWNSTREAM</h2>
 
 The Water Bank is a **separate deterministic engineering layer**. Priority mapping provides planning context; it does not automatically generate infrastructure capacities or commands.
