@@ -20,3 +20,6 @@ deploy
 *.db
 credentials*
 access_tokens*
+
+# Local demonstration video is not an application runtime asset.
+*.mp4

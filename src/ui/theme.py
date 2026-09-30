@@ -37,7 +37,7 @@ p, label, li { color: #bdd0cd; line-height: 1.5; }
 h2 { font-size: clamp(1.45rem, 2.1vw, 1.8rem) !important; line-height: 1.2 !important; }
 h3 { font-size: clamp(1.2rem, 1.65vw, 1.45rem) !important; line-height: 1.25 !important; }
 h4 { font-size: 1.08rem !important; line-height: 1.3 !important; }
-.block-container { max-width: 1480px; padding-top: 1.4rem; padding-bottom: 4rem; }
+.block-container { max-width: 1680px; padding-top: 1.4rem; padding-bottom: 4rem; }
 .hero {
   position: relative; overflow: hidden; padding: 1.55rem 1.8rem; border: 1px solid var(--line);
   border-radius: 22px; background: linear-gradient(118deg, rgba(12,45,49,.96), rgba(9,29,35,.88));
@@ -72,14 +72,23 @@ h4 { font-size: 1.08rem !important; line-height: 1.3 !important; }
 .sim-banner { display:flex; gap:.6rem; align-items:center; padding:.55rem .8rem; border-radius:10px;
   background:rgba(74,168,255,.08); border:1px solid rgba(74,168,255,.18); color:#9fcdf6; font-size:.75rem; font-weight:700; }
 div[data-testid="stMetric"] { border:1px solid var(--line); background:rgba(12,39,42,.6); padding:.75rem; border-radius:14px; }
-[data-testid="stMetricLabel"] p { font-size:.8rem !important; line-height:1.3 !important; }
+[data-testid="stMetricLabel"] p { font-size:.94rem !important; line-height:1.4 !important; }
 [data-testid="stMetricValue"] { font-size:clamp(1.18rem,1.7vw,1.55rem) !important; line-height:1.2 !important; overflow-wrap:anywhere; }
 [data-testid="stMetricDelta"] { font-size:.78rem !important; }
-[data-testid="stCaptionContainer"] p { font-size:.82rem !important; line-height:1.45 !important; }
-[data-testid="stExpander"] summary p { font-size:.92rem !important; }
+[data-testid="stCaptionContainer"] p { font-size:.94rem !important; line-height:1.5 !important; }
+[data-testid="stExpander"] summary p { font-size:1rem !important; }
 .stButton > button { min-height: 2.8rem; border-radius: 10px; border:1px solid rgba(92,225,212,.24); font-size:.9rem; font-weight:700; }
 .stButton > button[kind="primary"] { background:linear-gradient(100deg,#21a59a,#2579a9); color:white; border:0; box-shadow:0 10px 30px rgba(25,142,147,.25); }
 [data-testid="stPlotlyChart"] { border:1px solid var(--line); border-radius:16px; overflow:hidden; background:rgba(8,29,33,.55); }
+/* Readable desktop controls and responsive landscape presentation. */
+[data-testid="stMarkdownContainer"] p, [data-testid="stMarkdownContainer"] li { font-size: 1.02rem; }
+[data-testid="stWidgetLabel"] p { font-size: .98rem !important; }
+[data-testid="stSelectbox"] [data-baseweb="select"] { font-size: 1rem; }
+.stButton > button { font-size: 1rem; min-height: 3rem; }
+@media (min-width: 1100px) {
+  .block-container { padding-left: 2rem; padding-right: 2rem; }
+  h1 { font-size: 2.65rem !important; }
+}
 @media (max-width: 700px) {
   .hero { padding:1.25rem; }
   .hero h1 { font-size:clamp(1.8rem,8.5vw,2.45rem); }
@@ -110,7 +119,9 @@ def render_sidebar_context() -> bool:
             '<div class="sim-banner">● SIMULATION MODE<br>NO PHYSICAL IOT SENSOR CONNECTED</div>',
             unsafe_allow_html=True,
         )
-        st.caption("Water Bank operational rainfall, node, quality and impact values are simulated prototype data. The Priority Map uses separately documented geospatial evidence.")
+        st.caption(
+            "Water Bank operational rainfall, node, quality and impact values are simulated prototype data. The Priority Map uses separately documented geospatial evidence."
+        )
         # Poll the cached adapter so an outage during this session remains visible.
         from src.ui.runtime import repository
 

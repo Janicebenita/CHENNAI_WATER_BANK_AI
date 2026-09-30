@@ -21,3 +21,6 @@ prototype_firmware
 deploy
 reports
 tests
+
+# Local demonstration video is not an application runtime asset.
+*.mp4

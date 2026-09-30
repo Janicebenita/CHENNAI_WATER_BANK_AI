@@ -27,25 +27,25 @@ st.markdown(
     '<div class="eyebrow">GEOIMPATHON 1.0 · WATER RESOURCE MANAGEMENT · PROBLEM STATEMENT 2.3</div>',
     unsafe_allow_html=True,
 )
-st.title("WATER CONSERVATION PRIORITY MAP")
+st.title("Water Conservation Priority Map")
 st.write("**Watershed-Based Water Resource Priority Mapping**")
 st.caption(
     "Spatial evidence → priority zones → conservation recommendation → deterministic Water Bank scenario"
 )
-st.info(
-    "Demonstration Analysis Zones — not official watersheds. Provisional screening with demonstration weights; field validation and DEM-based watershed delineation remain required."
+st.caption(
+    "Demonstration Analysis Zones · not official watersheds · field validation required"
 )
 
 sample = load_sample()
 collection = sample
 weights = dict(PRIORITY_WEIGHTS)
-with st.expander("Model controls · eight official parameters · data import"):
+with st.sidebar.expander("Priority model · weights & data", expanded=False):
     st.caption(
         "Equal demonstration weights avoid claiming evidence for expert/calibrated weights. They are not Chennai policy weights. Terrain and vegetation can be correlated; sensitivity and local calibration are still needed."
     )
-    columns = st.columns(4)
+    columns = st.columns(2)
     for i, key in enumerate(weights):
-        weights[key] = columns[i % 4].number_input(
+        weights[key] = columns[i % 2].number_input(
             key,
             min_value=0.0,
             max_value=1.0,
@@ -107,9 +107,10 @@ try:
 except ValueError as exc:
     st.error(str(exc))
     st.stop()
-require_full = st.toggle(
-    "Require complete data for every positively weighted indicator", value=False
-)
+with st.sidebar:
+    require_full = st.toggle(
+        "Require complete data for every positively weighted indicator", value=False
+    )
 features = collection["features"]
 if not features:
     st.warning("No analysis zones available.")
@@ -168,52 +169,118 @@ colors = {
     "VERY LOW": "#4597c5",
     "INSUFFICIENT DATA": "#86929a",
 }
-st.subheader("Priority zones · Chennai study-area context")
-basemap = st.toggle("Online OpenStreetMap context", value=True)
-fig = px.choropleth_map(
-    frame,
-    geojson=collection,
-    locations="Zone",
-    featureidkey="properties.zone_id",
-    color="Priority",
-    color_discrete_map=colors,
-    category_orders={"Priority": list(colors)},
-    hover_name="Location",
-    hover_data={
-        "Zone": True,
-        "Priority Score": ":.3f",
-        "Slope (°)": ":.2f",
-        "NDVI": ":.3f",
-        "Surface Water Occurrence (%)": ":.2f",
-    },
-    center={"lat": 13.02, "lon": 80.21},
-    zoom=10,
-    map_style="open-street-map" if basemap else "white-bg",
-    opacity=0.72,
-)
-fig.add_trace(
-    go.Scattermap(
-        lat=[13.0827],
-        lon=[80.2707],
-        mode="markers+text",
-        text=["Chennai context"],
-        textposition="top center",
-        marker={"size": 10, "color": "#234e70"},
-        name="City reference",
-        hovertemplate="Chennai reference point; not an installed node<extra></extra>",
+map_column, recommendation_column = st.columns([2.15, 1], gap="large")
+with recommendation_column:
+    st.subheader("Explore a zone")
+    selected = st.selectbox(
+        "Inspect a priority zone",
+        list(frame["Zone"]),
+        index=list(frame["Zone"]).index(top["Zone"]) if top is not None else 0,
     )
-)
-fig.update_layout(
-    height=550,
-    margin={"l": 0, "r": 0, "t": 0, "b": 0},
-    legend={"orientation": "h", "y": -0.08},
-    paper_bgcolor="rgba(0,0,0,0)",
-    font_color="#bdd0cd",
-)
-st.plotly_chart(fig, width="stretch", config={"displayModeBar": False})
-st.caption(
-    "Pan, zoom and hover to inspect. Colours are screening classes, not flood hazard or construction approval. Turn context off for an offline polygon map. OpenStreetMap © contributors. Rectangles are explicitly demonstration analysis zones."
-)
+    index = list(frame["Zone"]).index(selected)
+    p = features[index]["properties"]
+    r = results[index]
+    st.subheader(f"{selected} · {r['priority']}")
+    st.metric(
+        "Priority score", f"{r['score']:.3f}" if r["score"] is not None else "Unranked"
+    )
+    st.markdown("#### Recommended intervention")
+    st.write(records[index]["Recommended Intervention"])
+    st.caption(
+        f"Zone centre: {p['latitude']:.4f}° N, {p['longitude']:.4f}° E. No physical Water Bank installation is implied."
+    )
+    with st.expander("Why this priority? · indicator contributions", expanded=False):
+        st.dataframe(
+            pd.DataFrame(
+                [
+                    {
+                        "Indicator": k,
+                        "Normalized": r["normalized"][k],
+                        "Original weight": weights[k],
+                        "Effective weight": r["effective_weights"].get(k, 0),
+                        "Contribution": r["contributions"].get(k),
+                    }
+                    for k in PRIORITY_WEIGHTS
+                ]
+            ),
+            hide_index=True,
+            width="stretch",
+        )
+        if uploaded is not None:
+            st.write(
+                {
+                    "source": p["source"],
+                    "period": p["period"],
+                    "status": p["provenance_status"],
+                }
+            )
+        else:
+            st.caption(
+                f"NDVI valid land sample fraction: {p['ndvi_valid_fraction']:.1%}. Cloud/shadow/water excluded; ≥20% required."
+            )
+
+with map_column:
+    st.subheader("Priority zones · Chennai study-area context")
+    basemap = st.toggle("Online OpenStreetMap context", value=True)
+    fig = px.choropleth_map(
+        frame,
+        geojson=collection,
+        locations="Zone",
+        featureidkey="properties.zone_id",
+        color="Priority",
+        color_discrete_map=colors,
+        category_orders={"Priority": list(colors)},
+        hover_name="Location",
+        hover_data={
+            "Zone": True,
+            "Priority Score": ":.3f",
+            "Slope (°)": ":.2f",
+            "NDVI": ":.3f",
+            "Surface Water Occurrence (%)": ":.2f",
+        },
+        center={"lat": 13.02, "lon": 80.21},
+        zoom=10,
+        map_style="open-street-map" if basemap else "white-bg",
+        opacity=0.72,
+    )
+    fig.add_trace(
+        go.Scattermap(
+            lat=[13.0827],
+            lon=[80.2707],
+            mode="markers+text",
+            text=["Chennai context"],
+            textposition="top center",
+            marker={"size": 10, "color": "#234e70"},
+            name="City reference",
+            hovertemplate="Chennai reference point; not an installed node<extra></extra>",
+        )
+    )
+    fig.update_layout(
+        height=540,
+        margin={"l": 0, "r": 0, "t": 0, "b": 0},
+        legend={"orientation": "h", "y": -0.08},
+        paper_bgcolor="rgba(0,0,0,0)",
+        font={"color": "#bdd0cd", "size": 16},
+        hoverlabel={"font_size": 16},
+        uirevision="priority-map",
+    )
+    ring = features[index]["geometry"]["coordinates"][0]
+    fig.add_trace(
+        go.Scattermap(
+            lon=[point[0] for point in ring],
+            lat=[point[1] for point in ring],
+            mode="lines",
+            line={"width": 4, "color": "#163c67"},
+            showlegend=False,
+            hoverinfo="skip",
+        )
+    )
+    st.plotly_chart(
+        fig, width="stretch", config={"displayModeBar": False, "scrollZoom": True}
+    )
+    st.caption(
+        "Pan, zoom and hover to inspect. Colours are screening classes, not flood hazard or construction approval. Turn context off for an offline polygon map. OpenStreetMap © contributors. Rectangles are explicitly demonstration analysis zones."
+    )
 cols = st.columns(3)
 for col, label, key, fmt in zip(
     cols,
@@ -231,48 +298,6 @@ st.caption(
     "Bundled sample: POWER 2024 regional rainfall (same value in every zone; not a gauge observation); Sentinel-2 land NDVI 29 Feb 2024; JRC 1984–2021 mean water occurrence, not percentage water area. Imported rows use their declared source/period instead."
 )
 
-selected = st.selectbox(
-    "Inspect a priority zone",
-    list(frame["Zone"]),
-    index=list(frame["Zone"]).index(top["Zone"]) if top is not None else 0,
-)
-index = list(frame["Zone"]).index(selected)
-p = features[index]["properties"]
-r = results[index]
-st.subheader(f"{selected} · {r['priority']} · recommended intervention")
-st.write(records[index]["Recommended Intervention"])
-st.caption(
-    f"Zone centre: {p['latitude']:.4f}° N, {p['longitude']:.4f}° E. No physical Water Bank installation is implied."
-)
-with st.expander("Why this priority? · indicator contributions", expanded=False):
-    st.dataframe(
-        pd.DataFrame(
-            [
-                {
-                    "Indicator": k,
-                    "Normalized": r["normalized"][k],
-                    "Original weight": weights[k],
-                    "Effective weight": r["effective_weights"].get(k, 0),
-                    "Contribution": r["contributions"].get(k),
-                }
-                for k in PRIORITY_WEIGHTS
-            ]
-        ),
-        hide_index=True,
-        width="stretch",
-    )
-    if uploaded is not None:
-        st.write(
-            {
-                "source": p["source"],
-                "period": p["period"],
-                "status": p["provenance_status"],
-            }
-        )
-    else:
-        st.caption(
-            f"NDVI valid land sample fraction: {p['ndvi_valid_fraction']:.1%}. Cloud/shadow/water excluded; ≥20% required."
-        )
 st.subheader("Sortable zone evidence")
 st.dataframe(frame, hide_index=True, width="stretch")
 st.download_button(
