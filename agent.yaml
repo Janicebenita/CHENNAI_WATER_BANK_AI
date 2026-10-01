@@ -1,0 +1,15 @@
+spec_version: "0.1.0"
+name: chennai-water-conservation-priority-agent
+version: 1.0.0
+description: Produces explainable provisional water-conservation priority maps from provenance-aware geospatial evidence and connects planning context to deterministic Water Bank scenarios.
+author: Janice Benita F
+runtime:
+  max_turns: 20
+  timeout: 120
+tags:
+  - geospatial-analysis
+  - water-resource-management
+  - conservation-priority
+  - explainable-decisions
+  - deterministic-engineering
+  - human-review
